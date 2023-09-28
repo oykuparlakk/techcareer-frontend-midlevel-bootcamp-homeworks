@@ -1,0 +1,60 @@
+/* start bölümünün stilleri */
+#start {
+    padding-top: 10%;
+    background-color: #1ABC9D;
+    width: 100%;
+    height: 80vh; /* Ekran yüksekliğinin %70'ini kapla */
+}
+
+/* start-content içeriğini sayfanın ortasına yerleştirme */
+.start-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ebeveynin tam yüksekliğini kapla */
+    gap: 30px;
+}
+
+.personal-site-header p{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.personal-site-description p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Yazıları beyaz renk yapma */
+.personal-site-header p,
+.personal-site-description p {
+    color: white;
+    text-align: center; /* Yazıları ortala */
+}
+
+/* SVG'nin boyutunu ayarlama */
+.personal-image img {
+    width: 240px; /* Genişliği 240 piksel olarak ayarla */
+    height: 250px; /* Yüksekliği 250 piksel olarak ayarla */
+}
+
+    /* Divider için stil */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider-line {
+    width: 150px;
+    height: 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+.divider i {
+    font-size: 32px;
+    color: #ffffff;
+}

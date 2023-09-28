@@ -1,0 +1,92 @@
+#portfolio {
+    margin-top: 5%;
+    background-color: #ffffff;
+    width: 100%;
+    height: 80vh; /* Ekran yüksekliğinin %70'ini kapla */
+    padding-bottom: 10%;
+}
+.portfolio-header p{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2c3d50;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Ebeveynin tam yüksekliğini kapla */
+    gap: 30px;
+}
+
+/* Divider için stil */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider-line-portfolio {
+    width: 150px;
+    height: 5px;
+    display: inline-block;
+    background-color: #2c3d50;
+    margin: 0 10px;
+}
+
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu düzen */
+}
+
+.card {
+    padding: 5px; /* Kart içeriği ile border arasındaki boşluk */
+    text-align: center;
+    border-radius: 10px; /* Köşeleri yuvarlatmak için */
+    margin: 5px; /* Kartların kenarlarından boşluk eklemek için */
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px; /* Resimlerin köşelerini yuvarlatmak için */
+}
+
+/* Card üzerine gelindiğinde img elementinin transparanlık ekleyin */
+.card:hover img {
+    opacity: 0.2; /* Örnek bir opaklık değeri */
+    transition: opacity 0.3s ease;
+}
+
+/* Card üzerindeki ikonun stilini ayarlayın */
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1ABC9D;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Başlangıçta görünmez yapın */
+    transition: opacity 0.3s ease;
+}
+
+/* Card üzerine gelindiğinde ikonu görünür yapın */
+.card:hover .card-overlay {
+    opacity: 1;
+    font-size: 24px; /* İstediğiniz büyüklüğü burada ayarlayabilirsiniz */
+    color: #ffffff; /* İstediğiniz renk */
+}

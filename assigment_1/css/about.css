@@ -1,0 +1,69 @@
+#about {
+    margin-top: 150px;
+    background-color: #1ABC9D;
+    width: 100%;
+    padding: 30px 0; /* Üst ve alt boşluğu ayarla */
+    gap: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* İçeriğin maksimum genişliğini ayarla */
+    margin: 20px auto; /* İçeriği yatayda ortala ve üst boşluğu ayarla */
+    padding: 20px; /* İçeriğe iç kenar boşluğu ekle */
+    text-align: center; /* İçeriği ortala */
+    color: #ffffff;
+}
+
+.about-header p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0; /* Kenar boşluğunu ayarla */
+}
+
+.personal-site-description {
+    display: flex;
+    flex-direction: row; /* Öğeleri yatay olarak düzenle */
+    justify-content: space-between; /* Öğeleri arasında boşluk bırakarak yatay olarak dağıt */
+    margin-top: 30px; /* Yukarı boşluğu artırın */
+}
+
+.personal-site-description p {
+    font-weight: 300;
+    flex: 1; /* Eşit genişlikte öğeler için */
+    margin: 10px 20px; /* Paragraf kenar boşluğunu ayarla */
+    padding: 10px; /* İstenilen dolguyu ayarla */
+    text-align: left; /* Paragrafları sola dayalı yap */
+    font-size: 16px; /* Paragraf boyutunu küçült */
+}
+
+
+.custom-button {
+    margin-top: 20%;
+    background-color: #1ABC9D;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 15px 20px; /* Düğme içeriği etrafındaki boşluğu ayarla */
+    color: #ffffff;
+    font-size: 18px; /* Yazı boyutunu ayarla */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortala */
+    justify-content: center; /* İçeriği yatayda ortala */
+    gap: 10px; /* İçerik öğeleri arasındaki boşluğu ayarla */
+    width: 250px; /* Genişliği ayarla */
+    height: 60px; /* Yüksekliği ayarla */
+    cursor: pointer;
+}
+
+.custom-button i {
+    font-size: 24px; /* İkon boyutunu ayarla */
+}
+
+.custom-button:hover {
+    background-color: #ffffff; /* Üzerine gelindiğinde arka plan rengini beyaz yap */
+    color: #2c3d50; /* Üzerine gelindiğinde metin rengini koyu mavi yap */
+}
+
